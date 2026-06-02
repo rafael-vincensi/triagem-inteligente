@@ -216,6 +216,6 @@ ollama run mistral
 
 Projeto desenvolvido para a disciplina de Projeto Integrador do curso de Ciência da Computação.
 
-Marcos Felipe Schmid 
+Marcos Felipe Schmid e
 Rafael Vincensi de Miranda
 
