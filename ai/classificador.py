@@ -1,15 +1,26 @@
 from ollama import chat
+from ai.semantic_search import buscar_contexto
 
 
 def classificar_sintomas(sintomas):
+
+    contexto = buscar_contexto(
+        sintomas
+    )
 
     resposta = chat(
         model="mistral",
         messages=[
             {
                 "role": "system",
-                "content": """
+                "content": f"""
 Você é um sistema de triagem baseado no Protocolo de Manchester simplificado.
+
+Casos semelhantes encontrados:
+
+{contexto}
+
+Utilize os exemplos acima como referência para classificar o novo paciente.
 
 Regras:
 
@@ -17,32 +28,12 @@ Regras:
 - Amarelo = urgência moderada
 - Verde = casos sem risco imediato
 
-Exemplos:
-
-Sintomas: dor no peito intensa, falta de ar grave, desmaio
-CLASSIFICACAO: vermelho
-PRIORIDADE: 1
-ENCAMINHAMENTO: Emergência
-
-Sintomas: febre, tosse, dor de garganta
-CLASSIFICACAO: verde
-PRIORIDADE: 3
-ENCAMINHAMENTO: Consulta
-
-Sintomas: dor abdominal moderada, febre persistente
-CLASSIFICACAO: amarelo
-PRIORIDADE: 2
-ENCAMINHAMENTO: Urgência
-
 Retorne SOMENTE:
 
 CLASSIFICACAO:
 PRIORIDADE:
 ENCAMINHAMENTO:
-JUSTIFICATIVA: 
-
 """
-
             },
             {
                 "role": "user",

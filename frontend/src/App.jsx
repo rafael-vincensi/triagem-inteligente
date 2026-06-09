@@ -188,9 +188,9 @@ function App() {
               Triagem Inteligente
             </h1>
 
-            <p>
+            {/*<p>
               Sistema de Gestão Hospitalar
-            </p>
+            </p>*/}
 
           </div>
 
