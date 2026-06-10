@@ -143,7 +143,7 @@ triagem-inteligente/
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/triagem-inteligente.git
+git clone https://github.com/rafael-vincensi/triagem-inteligente.git
 ```
 
 ### 2. Backend
