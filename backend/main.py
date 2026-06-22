@@ -49,6 +49,11 @@ class TriagemRequest(BaseModel):
     telefone: str
     sintomas: str
 
+class AtualizarClassificacao(BaseModel):
+    classificacao: str
+    prioridade: int
+    encaminhamento: str
+
 print("HORA CADASTRO:", datetime.now())
 
 @app.post("/triagem")
@@ -200,6 +205,35 @@ def buscar_paciente(id: int):
         )
 
         return paciente
+
+    finally:
+        db.close()
+
+@app.put("/paciente/{id}/classificacao")
+def atualizar_classificacao(
+    id: int,
+    dados: AtualizarClassificacao
+):
+
+    db: Session = SessionLocal()
+
+    try:
+
+        paciente = (
+            db.query(Paciente)
+            .filter(Paciente.id == id)
+            .first()
+        )
+
+        paciente.classificacao = dados.classificacao
+        paciente.prioridade = dados.prioridade
+        paciente.encaminhamento = dados.encaminhamento
+
+        db.commit()
+
+        return {
+            "mensagem": "Classificação atualizada"
+        }
 
     finally:
         db.close()

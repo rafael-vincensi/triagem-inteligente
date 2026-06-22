@@ -83,6 +83,26 @@ function App() {
     setDetalhes(data);
   }
 
+  async function salvarClassificacao() {
+
+  await fetch(
+    `http://127.0.0.1:8000/paciente/${detalhes.id}/classificacao`,
+    {
+      method: "PUT",
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+        classificacao: novaClassificacao,
+        prioridade: Number(novaPrioridade),
+        encaminhamento: novoEncaminhamento
+      })
+    }
+  );
+}
+
   async function salvarStatus() {
 
     await fetch(

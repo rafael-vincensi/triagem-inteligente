@@ -150,8 +150,37 @@
     "prioridade": 2,
     "encaminhamento": "Urgência"
   },
-
   {
+  "sintomas": "dor intensa no ouvido com febre",
+  "classificacao": "amarelo",
+  "prioridade": 2,
+  "encaminhamento": "Urgência"
+},
+{
+  "sintomas": "otalgia intensa com secreção no ouvido",
+  "classificacao": "amarelo",
+  "prioridade": 2,
+  "encaminhamento": "Urgência"
+},
+{
+  "sintomas": "dor abdominal forte sem sinais de choque",
+  "classificacao": "amarelo",
+  "prioridade": 2,
+  "encaminhamento": "Urgência"
+},
+{
+  "sintomas": "crise asmática moderada sem cianose",
+  "classificacao": "amarelo",
+  "prioridade": 2,
+  "encaminhamento": "Urgência"
+},
+{
+  "sintomas": "febre alta há três dias",
+  "classificacao": "amarelo",
+  "prioridade": 2,
+  "encaminhamento": "Urgência"
+},
+{
     "sintomas": "tosse seca e febre",
     "classificacao": "verde",
     "prioridade": 3,
@@ -212,6 +241,96 @@
     "encaminhamento": "Consulta"
   },
   {
+  "sintomas": "dor leve no ouvido com audição preservada",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "dor no ouvido há dois dias sem febre",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "coceira no ouvido sem secreção",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "dor de cabeça leve desde ontem",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "cefaleia leve sem outros sintomas",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "nariz entupido e espirros",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "coriza sem febre",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "dor leve no joelho após caminhada",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "dor muscular leve após exercício físico",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "dor leve no ombro após esforço",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "coceira na garganta sem febre",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "rouquidão leve",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "pequena afta na boca",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "picada de mosquito com leve vermelhidão",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
+  "sintomas": "pele ressecada com coceira leve",
+  "classificacao": "verde",
+  "prioridade": 3,
+  "encaminhamento": "Consulta"
+},
+{
     "sintomas": "constipação intestinal crônica",
     "classificacao": "verde",
     "prioridade": 3,

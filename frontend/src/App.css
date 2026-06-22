@@ -226,6 +226,10 @@ textarea {
   width: 700px;
   max-width: 95%;
 
+  max-height: 90vh;
+
+  overflow-y: auto;
+
   border-radius: 16px;
 
   padding: 30px;
